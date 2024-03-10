@@ -1,0 +1,98 @@
+.Message{
+    width: 80%;
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.SenderAvatar{
+    background: #797676;
+    border-radius: 5%;
+    padding: 1%;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MessageInfo{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: 2%;
+}
+.MessageCT{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.MessageContent{
+    height:fit-content;
+    width:fit-content;
+    background-color: #7c7979;
+    border-radius: 5%;
+    padding: 0.4em;
+    max-width:95%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: Arial, sans-serif;
+    font-size: large;
+}
+
+
+.fromUserMessage{
+    width: 80%;
+    height:fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1%;
+    margin-top: 1%;
+    float: right;
+}
+.fromUserSenderAvatar{
+    background: #797676;
+    border-radius: 5%;
+    padding: 1%;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+.fromUserMessageInfo{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-right: 2%;
+}
+.fromUserSender{
+    text-align: right;
+}
+.fromUserMessageCT{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+
+}
+.fromUserMessageContent{
+    height:fit-content;
+    width:fit-content;
+    background-color: #7c7979;
+    border-radius: 5%;
+    padding: 0.4em;
+    max-width:90%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
+    margin-left: auto;
+    font-family: Arial, sans-serif;
+    font-size: large;
+}
+.fromUserSendtime{
+    margin-left: auto;
+}

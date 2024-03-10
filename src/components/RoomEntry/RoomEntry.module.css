@@ -1,0 +1,94 @@
+.RoomEntry{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    overflow-x: hidden;
+    align-items: center;
+    overflow-y: hidden;
+    margin-top: 1%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-left: 1%;
+}
+.RoomEntry:hover{
+    background: #797676;
+}
+.RoomEntryselected {
+  background-color:#bbb4b4;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  overflow-x: hidden;
+  align-items: center;
+  overflow-y: hidden;
+  margin-top: 1%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.GroupAvatar{
+    background: #797676;
+    border-radius: 5%;
+    padding: 2.5%;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RoomEntryInfo{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 75%;
+    justify-content: center;
+    margin-left: 2%;
+
+}
+.LastMessage{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.LastMessageTime{
+    margin-right: 0%;
+    width: fit-content;
+
+}
+
+.deleteButton{
+    width:fit-content;
+    height:fit-content;
+    position: relative;
+    background: none;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    padding: 0.3em;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+.deleteButton::before {
+    content: "";
+    height: 0%;
+    width: 0%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    position: absolute;
+    background-color: #494958;
+    transition: all 0.3s;
+  }
+.deleteButton:hover {
+    border: 2px solid #32323c;
+    color: white;
+  }
+.deleteButton:hover::before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+}
